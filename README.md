@@ -3,6 +3,8 @@
 # pasting all the commands, I used to make the todo list and jira
 
 
+
+
 C:\Users\Minfy.ADITYAREDDYDARA>mongosh
 Current Mongosh Log ID: 6836cadc2229accdf06c4bcf
 Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.1
@@ -464,3 +466,4 @@ todo> db.list.find({ createdAt: { $gte: twentyMinutesAgo } }).pretty();
 todo> const twentyMinutesAgo = new Date(now.getTime() - 100 * 60 * 1000);
 
 todo> db.list.find({ createdAt: { $gte: twentyMinutesAgo } }).pretty();
+
