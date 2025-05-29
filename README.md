@@ -2,125 +2,6 @@
 
 # pasting all the commands, I used to make the todo list and jira
 
-# adding all the data
-
-{
-  "new_data.records": [
-    {
-      "name": "krishna",
-      "age": 22
-    },
-    {
-      "name": "Suryatop",
-      "age": 21
-    }
-  ],
-  "todo.list": [
-    {
-      "title": "Finish MongoDB setup",
-      "description": "Install MongoDB server, configure authentication, and connect via Compass.",
-      "dueDate": "2025-05-28T11:20:09.791Z",
-      "priority": "high",
-      "completed": false,
-      "tags": ["mongodb", "setup"],
-      "createdAt": "2025-05-28T12:00:00Z"
-    },
-    {
-      "title": "Write Jenkins deployment pipeline",
-      "description": "Create a scripted Jenkins pipeline to build and deploy the app.",
-      "dueDate": "2025-05-28T11:20:09.791Z",
-      "priority": "medium",
-      "completed": false,
-      "tags": ["jenkins", "ci/cd"],
-      "createdAt": "2025-05-28T12:30:00Z"
-    }
-  ],
-  "jira.user": [
-    {
-      "username": "alice",
-      "fullName": "Alice Johnson",
-      "email": "alice@example.com",
-      "role": "developer",
-      "active": true,
-      "createdAt": "2025-05-28T12:00:00Z"
-    },
-    {
-      "username": "bob",
-      "fullName": "Bob Smith",
-      "email": "bob@example.com",
-      "role": "project_manager",
-      "active": true,
-      "createdAt": "2025-05-28T12:00:00Z"
-    },
-    {
-      "username": "carol",
-      "fullName": "Carol Lee",
-      "email": "carol@example.com",
-      "role": "tester",
-      "active": true,
-      "createdAt": "2025-05-28T12:00:00Z"
-    }
-  ],
-  "jira.projects": [
-    {
-      "name": "Website Redesign",
-      "description": "Revamp the company website with new branding and responsive design.",
-      "startDate": "2025-06-01T00:00:00Z",
-      "endDate": "2025-09-30T00:00:00Z",
-      "status": "active",
-      "createdBy": "bob",
-      "createdAt": "2025-05-28T12:00:00Z"
-    },
-    {
-      "name": "Mobile App",
-      "description": "Develop a mobile app for iOS and Android platforms.",
-      "startDate": "2025-07-15T00:00:00Z",
-      "endDate": "2025-12-31T00:00:00Z",
-      "status": "planning",
-      "createdBy": "bob",
-      "createdAt": "2025-05-28T12:00:00Z"
-    }
-  ],
-  "jira.tasks": [
-    {
-      "title": "Design new homepage",
-      "description": "Create wireframes and mockups for the new homepage.",
-      "project": "Website Redesign",
-      "assignedTo": "alice",
-      "status": "in_progress",
-      "priority": "high",
-      "dueDate": "2025-06-15T00:00:00Z",
-      "completed": false,
-      "createdAt": "2025-05-28T12:00:00Z",
-      "comments": []
-    },
-    {
-      "title": "Set up CI/CD pipeline",
-      "description": "Automate build and deployment processes for faster releases.",
-      "project": "Mobile App",
-      "assignedTo": "alice",
-      "status": "todo",
-      "priority": "medium",
-      "dueDate": "2025-08-01T00:00:00Z",
-      "completed": false,
-      "createdAt": "2025-05-28T12:00:00Z",
-      "comments": []
-    },
-    {
-      "title": "Test login feature",
-      "description": "Test login with valid and invalid credentials.",
-      "project": "Website Redesign",
-      "assignedTo": "carol",
-      "status": "todo",
-      "priority": "high",
-      "dueDate": "2025-06-20T00:00:00Z",
-      "completed": false,
-      "createdAt": "2025-05-28T12:00:00Z",
-      "comments": []
-    }
-  ]
-}
-
 
 # all the commands with data
 
@@ -587,5 +468,8 @@ todo> db.list.find({ createdAt: { $gte: twentyMinutesAgo } }).pretty();
 todo> const twentyMinutesAgo = new Date(now.getTime() - 100 * 60 * 1000);
 
 todo> db.list.find({ createdAt: { $gte: twentyMinutesAgo } }).pretty();
+
+
+
 
 
